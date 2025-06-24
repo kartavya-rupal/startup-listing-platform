@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 InnoVault – Full Stack Startup Listing Platform
 
-## Getting Started
+**InnoVault** is a full-stack startup listing platform built with the modern web stack, offering features like user authentication, personalized dashboards, and startup management. Developed using **Next.js (App Router)**, **TypeScript**, and **Sanity CMS**, the platform ensures scalable architecture, clean UI/UX, and real-time interactivity.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📁 Project Structure Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- app/ – Main application routes and layout logic (Next.js App Router)
+- components/ – Reusable UI elements (buttons, forms, toasts, etc.)
+- hooks/ – Custom React hooks for managing state and logic
+- lib/ – Utility functions, API handlers, and helper logic
+- sanity/ – Sanity CMS schemas, config, and extracted types
+- auth.ts – NextAuth.js configuration for secure authentication
+- next-auth.d.ts – Type declaration overrides for NextAuth session typing
+- sanity.config.ts – Core Sanity configuration
+- sanity.cli.ts – CLI configuration for Sanity
+- sanity-typegen.json – Type generation config for CMS schemas
+- tailwind.config.ts – Tailwind CSS configuration
+- postcss.config.mjs – PostCSS configuration
+- eslint.config.mjs – ESLint config for linting and code quality
+- tsconfig.json – TypeScript configuration for type checking and support
+- package.json – Project dependencies and scripts
+- package-lock.json – Dependency lock file
+- .gitignore – Ignored files/folders in version control
+- README.md – Project documentation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Key Features
 
-## Learn More
+- ✅ **Startup creation and listing management** via Sanity CMS  
+- 🔄 **Live content updates** and reactivity using Next.js API routes  
+- 🔐 **Secure user authentication** using NextAuth.js  
+- 🎨 **Elegant and responsive UI** using Tailwind CSS + ShadCN UI  
+- 📝 **Markdown-based content editing** with live preview  
+- 🧠 **Type-safe development** with TypeScript and Zod validation  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠 Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🖥️ Frontend  
+- **React.js**  
+- **Next.js 15 (App Router)**  
+- **TypeScript**
 
-## Deploy on Vercel
+### 🔧 Backend  
+- **Next.js API Routes**  
+- **Sanity CMS**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🎨 Styling  
+- **Tailwind CSS**  
+- **Styled-components**  
+- **ShadCN UI**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 🔐 Authentication  
+- **NextAuth.js**
+
+### 💡 UX & UI Tools  
+- **Radix UI**  
+- **Lucide Icons**  
+- **nprogress**  
+- **toploader**
+
+### 🧰 Utilities  
+- **Markdown-it** – Render markdown to HTML  
+- **clsx** – Conditional classNames  
+- **slugify** – Generate slugs from strings
+
+### ✅ Validation  
+- **Zod** – Runtime schema validation and form schema safety  
+
+---
